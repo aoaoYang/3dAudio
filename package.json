@@ -1,0 +1,14 @@
+{
+  "name": "Basic Server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Waseem"
+}

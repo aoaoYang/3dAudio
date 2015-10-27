@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Sound Controller</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Audio Controller</h1>
+      
+      <div class="audioWrapper">
+        <ul class="audioList"></ul>
+      </div>
+      
+      <h2>Controls</h2>
+      <button type="button" class="controlButton" data-audio-state="play">Play</button>
+      <button type="button" class="controlButton" data-audio-state="pause" disabled>Pause</button>
+      <h2>Set stereo panning</h2>
+      <input class="panning-control" type="range" min="-1" max="1" step="0.1" value="0">
+      
+      <button type="button" class="tableReset">clear data</button>
+  <div class="message">
+    
+    <table></table>
+
+      <!-- <div id="yes"> 
+        <div class="box" id="accel">
+          <span class="head">Accelerometer</span>
+          <span id="xlabel"></span>
+          <span id="ylabel"></span>
+          <span id="zlabel"></span>
+          <span id="ilabel"></span>         
+          <span id="arAlphaLabel"></span>                   
+          <span id="arBetaLabel"></span>                    
+          <span id="arGammaLabel"></span>                                       
+        </div>    
+      
+        <div class="box" id="gyro">
+          <span class="head">Gyroscope</span>
+          <span id="alphalabel"></span>     
+          <span id="betalabel"></span>
+          <span id="gammalabel"></span>
+        </div>
+        
+        <div class="box2" id="accelcolor">
+          <span class="head">Color</span>
+        </div>
+        <div class="box2" id="gyrocolor">
+          <span class="head">Color</span>
+        </div>
+        
+    </div>
+    <div id="no">
+      Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.    
+    </div> -->
+
+  </div>
+  
+  
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/audioController.js"></script>
+  </body>
+</html>

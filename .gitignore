@@ -1,0 +1,9 @@
+npm-debug.log
+/node_modules/
+*.jscsrc
+*.jshintrc
+*.tmp
+.DS_Store
+*.dir
+*.sublime-project
+*.sublime-workspace

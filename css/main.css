@@ -1,0 +1,142 @@
+body {
+    font: 12/16px Arial, verdana;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+li.center {
+    border: #ccc 1px dotted;
+    box-shadow: red 1px 6px 16px -4px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #CC2B9F;
+}
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+.clearfix {
+    clear: both;
+}
+.audioWrapper {
+    width: 1000px;
+    padding: 20px 0;
+    height: 90px;
+    overflow: auto;
+}
+.audioList {
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.audio {
+    display: block;
+    float: left;
+    width: 320px; /*100px;*/
+}
+.audio::after {
+    content: 'test';
+}
+.audio:last-child {
+    margin-right: 0;
+}
+.panning-control {
+    width: 1000px;
+}
+
+.message {
+    /*position: absolute;*/
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
+    z-index: 9;
+    background-color: #efefef;
+    font-size: 12px;
+    color: #000;
+    overflow: auto;
+    padding: 20px;
+    top: 0;
+    right: 0;
+}
+.message table { 
+    width: 100%;
+}
+.message th,
+.message td {
+    text-align: left;
+    padding: 5px;
+}
+
+/* gyro */
+#no {
+    display: none;  
+}
+
+@media screen {
+    html, body, div, span {
+        margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+    }           
+    body {
+        height: auto;
+    -webkit-text-size-adjust:none;
+    font-family:Helvetica, Arial, Verdana, sans-serif;
+    padding:0px;
+        overflow-x: hidden;     
+    }       
+    
+    .outer {
+        background: rgba(123, 256, 245, 0.9);
+        padding: 0px;
+        min-height: 48px;
+        
+    }
+    
+    .box {
+        position: relative;
+        float: left;
+        width: 45%;
+        padding: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background: rgba(178,215,255,0.75);
+        min-height: 160px;
+    }   
+    
+    .box2 {
+        position: relative;
+        float: left;
+        width: 45%;
+        padding: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background: rgba(178,215,255,0.75);
+    }   
+    
+    .box span {
+        display: block;
+    }
+    
+    span.head {
+        font-weight: bold;              
+    }
+}
